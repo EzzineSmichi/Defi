@@ -1,0 +1,167 @@
+
+
+html, body{
+    margin: 0;
+    padding: 0 15px;
+    background-color: #1f64f0;
+    background-image: url('../media//images/bg.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: auto;
+    font-family: 'Myriad Pro', regular;
+    font-size: 18pt;
+    color: #fff;
+}
+
+
+/* header styles */
+
+header {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+
+/* conteneur of logo and nav */
+
+header div:first-child{
+
+    display: flex;
+    flex-flow: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+/* logo width */
+
+header div img {
+    width: 120px;
+    
+}
+
+
+/* list ul styles*/
+
+header div ul {
+    list-style: none;
+    display: flex;
+    flex-flow: wrap;
+}
+
+
+/* li styles */
+
+header li {
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end; 
+}
+
+
+/* nav links styles */
+
+header nav a{
+    margin-right: .3rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+header nav i {
+    color: #fff;
+}
+
+.btns {
+    display: flex;
+    
+}
+
+
+header button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+}
+
+
+header .btns button:first-child{
+    color: #37363b;
+    background-color: #fff;
+    margin-right: 5px;
+    margin-right: 10px;
+}
+
+
+header .btns button:last-child {
+    background-color: rgba(28, 97, 235, .5);
+    color: #fff;
+
+}
+
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+section h1 {
+    font-weight: 500;
+    margin-bottom: .3rem;
+}
+
+
+section div:first-child {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 30%;
+}
+
+
+
+section .btns button {
+    font-weight: 700;
+    outline: none;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section div .btns button:first-child {
+    background-color: #fa4ea0;
+    color: #fff;
+    margin-right: 20px;
+}
+
+section div .btns button:last-child {
+    background-color: #fff;
+    color: #fa4ea0;
+}
+
+
+section video {
+    width: 500px;
+    height: auto;
+}
+
+
+@media screen and (max-width:1028px){
+    section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section div:first-child{
+        align-items: center;
+        margin-bottom: 2.5rem;
+    }
+}
